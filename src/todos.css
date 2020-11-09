@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: aquamarine;
+	color: #333333;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited,
+a:focus {
+	color: #333333;
+}
+
+.todosApp {
+	height: 50%;
+	width: 50%;
+	border-radius: 6px;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	margin: 20px auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.todo_Wrapper {
+	/* border: #333333 1px solid; */
+	width: 70%;
+}
+
+/* * Nav */
+
+nav {
+	border-bottom: 1px solid #bdbdbd;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav > button {
+	width: 80px;
+	height: 100%;
+	background: none;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+nav > button:hover {
+	border-bottom: 2px solid blue;
+}
+
+nav > button:visited {
+	color: #333333;
+}
+
+/* * Button */
+
+.default {
+	/* padding: 20px 39px; */
+	border-radius: 6px;
+	border: none;
+	border: 1px solid #bdbdbd;
+	color: #333333;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	height: 40px;
+	width: 100px;
+}
+
+.primary {
+	background-color: #2f80ed;
+	color: #fff;
+}
+
+.delete {
+	background-color: #eb5757;
+	color: #fff;
+}
+
+/* * input */
+
+.formInput {
+	/* border: 1px dashed deeppink; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inputTodo {
+	margin: 10px 0;
+	padding: 0 10px;
+	border-radius: 6px;
+	border: 1px solid #bdbdbd;
+	height: 40px;
+	width: 75%;
+}
+
+/* * Checkbox */
+
+.checkbox {
+	/* border: 1px solid seagreen; */
+	padding: 10px;
+	width: 100%;
+}
+
+.checkbox > input {
+	border: 1px salmon dashed;
+	margin-right: 10px;
+	border-radius: 5px !important;
+}
+
+.checkbox > input:checked {
+	background: sandybrown !important;
+}
+
+.checkbox > label {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+/*  * Delete */
+
+.deleteWrapper {
+	/* border: 1px dashed deeppink; */
+	margin: 10px auto;
+}
+
+.deleteCheckbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* border: 1px darkslategrey solid; */
+}
+
+.icon {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.btnWrapper {
+	margin-top: 10px;
+	text-align: right;
+}
+
+/* Media Querie */
+
+@media only screen and (max-width: 720px) {
+	.todosApp {
+		width: 90%;
+		height: 90%;
+	}
+	.todo_Wrapper {
+		height: 90%;
+		width: 90%;
+	}
+	.formInput {
+		flex-direction: column;
+	}
+	.inputTodo {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.todosApp {
+		width: 90%;
+		height: 90%;
+	}
+}
