@@ -80,6 +80,9 @@ const TodosApp = () => {
 							</Route>
 						</Switch>
 					</div>
+					<footer>
+						<p>Mohamed@devChallanges.io</p>
+					</footer>
 				</div>
 			</Router>
 		</>

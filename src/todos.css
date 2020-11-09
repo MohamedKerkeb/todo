@@ -165,7 +165,17 @@ nav > button:visited {
 	text-align: right;
 }
 
-/* Media Querie */
+/* * Footer */
+
+footer {
+	height: 50px;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* * Media Querie */
 
 @media only screen and (max-width: 720px) {
 	.todosApp {
